@@ -1,6 +1,8 @@
+interface ILayout {
+  children: React.ReactNode;
+}
 
-
-function Layout({children}) {
+function Layout({children}: ILayout) {
   return (
     <div className='body'>
         {children}
