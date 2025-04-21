@@ -1,0 +1,412 @@
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 76px;
+  max-width: 1216px;
+  background-color: var(--slate-700);
+  border-radius: 1rem;
+}
+
+/* ===== List Item ===== */
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 486px;
+  max-width: 90%;
+  height: 90px;
+  padding: 0 1rem;
+  margin: 2.5rem 5px 15px 5px;
+  background-color: var(--slate-800);
+  border-radius: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.list__item:hover {
+  background-color: rgba(63, 69, 76, 0.973);
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list__item img {
+  width: 64px;
+  height: 64px;
+  margin: 1.3rem 0.4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.list__item h1,
+.list__item h2 {
+  display: inline-block;
+  height: 21px;
+}
+
+.list__item h2 {
+  margin-bottom: 30px;
+}
+
+.list__item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200px;
+  margin-right: 99px;
+}
+
+.list__item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+}
+
+/* ===== Character List Container ===== */
+.character__list {
+  width: 488px;
+  height: 730px;
+  box-sizing: border-box;
+}
+
+/* ===== Icon ===== */
+.icon-style {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.icon-style:focus {
+  color: #4a04f0;
+  outline: none;
+}
+
+/* ===== Buttons ===== */
+button,
+.btn_primary {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_primary {
+  background-color: #475569;
+}
+
+.btn_primary:hover {
+  background-color: #334155;
+}
+
+/* ===== Input Fields ===== */
+input {
+  padding: 10px;
+  width: 10vw;
+  min-width: 8vw;
+  border-radius: 10px;
+  background-color: rgba(29, 39, 49, 255);
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ===== Headings ===== */
+h1 {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 19px;
+}
+
+h2 {
+  display: flex;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Character Detail ===== */
+.character-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 700px;
+  height: 245px;
+  margin: 2.5rem 1rem 0 1rem;
+  background-color: var(--slate-800);
+  border-radius: 14px;
+}
+
+.character-detail img {
+  width: 280px;
+  height: 240px;
+  border-radius: 20px;
+}
+
+.character-detail__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 240px;
+  width: 188px;
+  margin: 0 15px 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-detail button {
+  max-width: 138px;
+  height: 40px;
+  padding: 1px 15px;
+  margin-bottom: 40px;
+  border-radius: 13px;
+  background-color: #475569;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.character-detail button:hover {
+  background-color: #334155;
+  color: #f1f5f9;
+  transform: scale(1.05);
+}
+
+/* ===== Location & Status ===== */
+.location {
+  display: inline-block;
+}
+
+.location > * {
+  height: 21px;
+}
+
+.location span {
+  color: var(--slate-500);
+  font-weight: 700;
+}
+
+.location p {
+  color: var(--slate-300);
+  font-weight: 700;
+}
+
+.status {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--green-600);
+}
+
+.status.red {
+  background-color: var(--rose-600);
+}
+
+/* ===== Episode Container ===== */
+.episode__container {
+  width: 640px;
+  height: 458px;
+  margin: 2rem 0 0 20px;
+  padding: 1rem;
+  background-color: var(--slate-800);
+  border: 1px solid var(--slate-300);
+  border-radius: 1rem;
+}
+
+.episode__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+}
+
+.episode__title h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  color: var(--slate-300);
+  font-weight: 700;
+}
+
+.episode__container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 607px;
+  height: 344px;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.episode__container li {
+  display: flex;
+  width: 606px;
+  height: 65px;
+  margin-top: 10px;
+}
+
+/* ===== Miscellaneous ===== */
+strong {
+  font-weight: bolder;
+}
+
+.badge {
+  background-color: var(--slate-600);
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+.button-container {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 5px;
+}
+
+.item__airDate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  margin-left: auto;
+  width: 120px;
+  height: 18px;
+}
+
+.text-field {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  color: var(--slate-100);
+  background-color: var(--slate-500);
+  border-radius: 0.5rem;
+}
+
+/* ===== Modal ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 69, 76, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 51;
+  width: 80%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: var(--slate-900);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--slate-300);
+}
+
+.modal-close-button {
+  margin-left: auto;
+  padding: 8px 11px;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  background-color: #475569;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background-color: #334155;
+  color: #f1f5f9;
+  transform: scale(1.05);
+}
+
+/* ===== Character Modal Item ===== */
+.character-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== Heart Icon ===== */
+.heart-icon {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.heart-icon.fav {
+  color: red;
+}
+
+.heart-icon.none {
+  color: white;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* ===== Favourite Button ===== */
+.favourite-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.favourite-button span {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navbar > * {
+    width: 100%;
+    text-align: center;
+  }
+}
