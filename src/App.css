@@ -224,7 +224,7 @@ h3 {
 /* ===== Episode Container ===== */
 .episode__container {
   width: 640px;
-  height: 458px;
+  height: 428px;
   margin: 2rem 0 0 20px;
   padding: 1rem;
   background-color: var(--slate-800);
@@ -409,4 +409,15 @@ strong {
     width: 100%;
     text-align: center;
   }
+}
+
+.fav {
+  color: red;  /* Change the color of the heart when it's added to favourites */
+  font-size: 24px; /* You can also change the font size or other properties */
+}
+
+/* This will keep the heart icon in its default state when it's not added */
+.none {
+  color: gray;  /* Greyed out heart icon */
+  font-size: 24px; /* Same size, but it can be different if needed */
 }
