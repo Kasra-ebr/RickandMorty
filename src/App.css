@@ -184,14 +184,14 @@ h3 {
   height: 15px;
 }
 .location p{
-
+  margin-bottom: 25px;
   height: 15px;
 }
 .character-detail button {
   max-width: 138px;
   height: 40px;
   padding: 1px 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-radius: 13px;
   background-color: #475569;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

@@ -36,7 +36,7 @@ function Favourites() {
               <Button style={{   boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
               
                 transition: "background-color 0.3s ease"}} onClick={() => handleRemveFav(char.id)}>
-              <FaTrash className="list_item__button" size={25} />
+              <FaTrash className="list_item__button" size={20} />
               </Button >
             </Character>
           ))
