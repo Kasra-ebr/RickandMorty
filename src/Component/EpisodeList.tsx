@@ -33,13 +33,14 @@ function EpisodeList() {
       ) : (
         <div className="episode__container">
           <div className="episode__title">
-            <h1>List of Episodes</h1>
-            <Button onClick={() => setSortBy((prev) => !prev)}>
+            <h1>List of Episodes :</h1>
+        <div>
+        <Button className="btn-icon" onClick={() => setSortBy((prev) => !prev)}>
               <IoToggleSharp
-                className="icon"
+               
                 style={{
-                  width: "36px",
-                  height: "36px",
+                  width: "30px",
+                  height: "30px",
                   outline: "none",
                   border: "none",
                   transform: sortBy ? "rotate(360deg)" : "rotate(0deg)",
@@ -47,6 +48,7 @@ function EpisodeList() {
                 }}
               />
             </Button>
+        </div>
           </div>
 
           <ul>

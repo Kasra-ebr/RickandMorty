@@ -33,7 +33,7 @@ function CoinList() {
       .slice(0, 4)
       .map((item) => (
         <Character key={item.id} char={item}>
-          <Button onClick={() => handleCharacter(item.id)}>
+          <Button className="btn_chr" onClick={() => handleCharacter(item.id)}>
             {selectedId === item.id ? (
               <EyeSlashIcon
                 style={{

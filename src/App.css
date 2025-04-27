@@ -43,7 +43,8 @@
 .list__item h1,
 .list__item h2 {
   display: inline-block;
-  height: 21px;
+  height: 13px;
+  margin-left: 10px;
 }
 
 .list__item h2 {
@@ -51,11 +52,12 @@
 }
 
 .list__item div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 200px;
-  margin-right: 99px;
+  display: flex
+  ;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 218px;
+      margin-right: 99px;
 }
 
 .list__item__button {
@@ -86,6 +88,9 @@
 }
 
 /* ===== Buttons ===== */
+.btn_chr{
+  margin-left: 66px;
+}
 button,
 .btn_primary {
   cursor: pointer;
@@ -94,6 +99,7 @@ button,
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+
 }
 
 .btn_primary {
@@ -172,8 +178,15 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  gap: -1;
 }
+.character-detail__info h1 {
+  height: 15px;
+}
+.location p{
 
+  height: 15px;
+}
 .character-detail button {
   max-width: 138px;
   height: 40px;
@@ -224,11 +237,10 @@ h3 {
 /* ===== Episode Container ===== */
 .episode__container {
   width: 640px;
-  height: 428px;
+  height: 352px;
   margin: 2rem 0 0 20px;
   padding: 1rem;
   background-color: var(--slate-800);
-  border: 1px solid var(--slate-300);
   border-radius: 1rem;
 }
 
@@ -236,17 +248,20 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 63px;
+  height: 39px;
+  border-bottom: 2px solid white;
 }
 
 .episode__title h1 {
-  margin-left: 20px;
-  font-size: 24px;
-  color: var(--slate-300);
-  font-weight: 700;
+  margin-left: 5px;
+  font-size: 23px;
+  color: var(--slate-400);
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .episode__container ul {
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,10 +273,10 @@ h3 {
 }
 
 .episode__container li {
-  display: flex;
-  width: 606px;
-  height: 65px;
-  margin-top: 10px;
+  display: flex
+  ;
+      width: 631px;
+      height: 39px;
 }
 
 /* ===== Miscellaneous ===== */
@@ -288,6 +303,7 @@ strong {
 .item__airDate {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 3px;
   margin-left: auto;
   width: 120px;
@@ -361,6 +377,7 @@ strong {
 }
 
 /* ===== Heart Icon ===== */
+
 .heart-icon {
   font-size: 1.5rem;
   color: #e74c3c;
