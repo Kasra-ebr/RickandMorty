@@ -19,7 +19,6 @@ A sleek and interactive React + TypeScript application that displays characters 
 ## 📒 Badges & Technologies
 
 [![React](https://img.shields.io/badge/React-Hooks-blue?style=flat-square&logo=react)](https://reactjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Strongly_Typed-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-Fast-purple?style=flat-square&logo=vite)](https://vitejs.dev)
 [![React Context](https://img.shields.io/badge/Context_API-State_Management-green?style=flat-square)](https://reactjs.org/docs/context.html)
 [![Heroicons](https://img.shields.io/badge/Heroicons-Icons-blue?style=flat-square)](https://heroicons.com)
@@ -42,8 +41,7 @@ A sleek and interactive React + TypeScript application that displays characters 
 
 | Technology     | Description                                  |
 |----------------|----------------------------------------------|
-| **React.js**       | Front-end UI library                         |
-| **TypeScript**     | Strongly typed JavaScript                    |
+| **React.js**       | Front-end UI library                         |                   |
 | **Vite**           | Blazing fast React tooling                   |
 | **React Context**  | Global state management                      |
 | **Heroicons**      | Beautiful icon set for React                 |
@@ -75,8 +73,6 @@ src/
 │   └── useLocalStorage.ts
 ├── Server/
 │   └── server.ts
-├── Type/
-│   └── Type.ts
 ├── index.css
 └── main.tsx
 ```
